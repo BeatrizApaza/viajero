@@ -1,11 +1,51 @@
 
-<h1>{{title}}</h1>
-<nav>
-    <a routerLink="/principal">Principal</a>
-    <a routerLink="/conexiones">Conexiones</a>
-    <a routerLink="/inter">Inter-Visitacion</a>
-    <a routerLink="/presupuesto">Presupuesto</a>
-</nav>
-<router-outlet></router-outlet>
+<div class="container pt-5">
+  <div class="row">
+    <div class="col-sm-3">
+        <img width="100" src="../assets/logo.png"> 
+    </div>
+    <div class="col-sm-9">
+        <h1>{{title}}</h1>
+      </div>    
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 menu">
+      <nav class="navbar navbar-expand-lg navbar-dark d-flex flex-column ">
+        <div class="flex-column">
+        <a class="navbar-brand" href="#">Menu Principal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">test</span>
+        </button>
+      </div>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto d-flex flex-column">
+            <li class="nav-item active">
+              <a class="nav-link " routerLink="/principal">Principal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/conexiones">Conexiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/inter">Inter-Visitacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/presupuesto">Presupuesto</a>
+            </li>
+          </ul>
+    
+        </div>
+      </nav>
+    </div>
+    <div class="col-sm-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
+
+
 
 
