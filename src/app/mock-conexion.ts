@@ -1,7 +1,22 @@
 import { Conexion } from './conexion'
 
-export const CONEXIONES: Conexion[] = [ { id:1, nombre:'Beatriz',ciudad:'LPZ', idioma:'Español'},
-                                        { id:2, nombre:'Beatriz',ciudad:'LPZ', idioma:'Español'},
-                                        { id:3, nombre:'Beatriz',ciudad:'LPZ', idioma:'Español'},
-                                        { id:4, nombre:'Beatriz',ciudad:'LPZ', idioma:'Español'}
+export const CONEXIONES: Conexion[] = [ 
+    {
+        "postId": 1,
+        "id": 1,
+        "name": "id labore ex et quam laborum",
+        "email": "Eliseo@gardner.biz",
+        "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+      },
+      {
+        "postId": 1,
+        "id": 2,
+        "name": "quo vero reiciendis velit similique earum",
+        "email": "Jayne_Kuhic@sydney.com",
+        "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+      },
+    
+    
+    
+    { "postId": 1, id:1, name:'Beatriz',email:'LPZ', body:'Español'}
  ];

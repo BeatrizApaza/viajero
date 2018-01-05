@@ -1,6 +1,7 @@
 export class Conexion {
+    postId: number;
     id: number;
-    nombre: string;
-    ciudad: string;
-    idioma: string;
+    name: string;
+    email: string;
+    body: string;
 }

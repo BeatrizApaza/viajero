@@ -1,5 +1,7 @@
+import { ConexionService } from '../conexion.service';
 import { Component, OnInit } from '@angular/core';
 import { CONEXIONES } from '../mock-conexion'
+import { Conexion } from '../conexion';
 
 @Component({
   selector: 'app-conexion',
@@ -7,11 +9,19 @@ import { CONEXIONES } from '../mock-conexion'
   styleUrls: ['./conexion.component.css']
 })
 export class ConexionComponent implements OnInit {
-  conexiones= CONEXIONES;
+  // conexiones= CONEXIONES;
+  conexiones : Conexion[];
   
-  constructor() { }
+  constructor(private conexionService:ConexionService) { }
+  getConexiones(): void {
+    this.conexionService.getConexiones()
+      .subscribe(conexiones => this.conexiones = conexiones);
+  }
+
+
 
   ngOnInit() {
+    this.getConexiones();
     // console.log(this.conexiones);
   }
 }
