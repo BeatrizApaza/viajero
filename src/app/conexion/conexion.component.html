@@ -19,15 +19,11 @@
               <th>Ciudad</th>
               <th>Idioma</th>
             </tr>
-            <tr>
-              <td>Value1</td>
-              <td>Value1</td>
-              <td>Value1</td>
-            </tr>
-            <tr>
-              <td>Value2</td>
-              <td>Value2</td>
-              <td>Value2</td>
+            <tr *ngFor="let conexion of conexiones">
+
+              <td>{{conexion.nombre}}</td>
+              <td>{{conexion.ciudad}}</td>
+              <td>{{conexion.idioma}}</td>
             </tr>
           </table>  
         </div>  

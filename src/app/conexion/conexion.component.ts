@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CONEXIONES } from '../mock-conexion'
 
 @Component({
   selector: 'app-conexion',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conexion.component.css']
 })
 export class ConexionComponent implements OnInit {
-
+  conexiones= CONEXIONES;
+  
   constructor() { }
 
   ngOnInit() {
+    // console.log(this.conexiones);
   }
-
 }
