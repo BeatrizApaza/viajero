@@ -1,4 +1,5 @@
 export class Conexion {
+<<<<<<< HEAD
     albumId: number;
     id: number;
     title: string;
@@ -14,10 +15,13 @@ export class Conexion1 {
 
 }
 /*
+=======
+>>>>>>> ce1af406fbe422d874a13adf66159b31e85863c6
     postId: number;
     id: number;
     name: string;
     email: string;
+<<<<<<< HEAD
     body: string
 
     albumId: number;
@@ -28,3 +32,7 @@ export class Conexion1 {
 
 */
 
+=======
+    body: string;
+}
+>>>>>>> ce1af406fbe422d874a13adf66159b31e85863c6
