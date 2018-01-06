@@ -1,18 +1,6 @@
 
-.cabecera{
-    margin: 6px auto;
-	text-align: center;
-}
+/*  
 
-.contenido{
-	width: 400px;
-	margin: 20px auto;
-	background-color: #F3EDED;
-        border: 1px solid #ECE8E8;
-	height: 350px;
-	border-radius: 50px;
-	padding: 60px 50px 60px 50px;
-}
 input{
 	width: 8px;
 }
@@ -25,4 +13,19 @@ input{
 	width: 100%;
 }
 
+*/
+.cabecera{
+    margin: 6px auto;
+	text-align: center;
+}
+.contenido{
+	width: 400px;
+	background-color: #F3EDED;
+    border: 1px solid #ECE8E8;
+	height: 350px;
+	border-radius: 50px;
+	margin: 20px auto;
+	padding: 60px 50px 60px 50px;
+	
+}
 

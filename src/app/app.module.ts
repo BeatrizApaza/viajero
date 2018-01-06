@@ -9,6 +9,9 @@ import { InterVisitacionComponent } from './inter-visitacion/inter-visitacion.co
 import { ConexionComponent } from './conexion/conexion.component';
 import { PresupuestoComponent } from './presupuesto/presupuesto.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { ConexionService } from './conexion.service';
+
+import { HttpClientModule }    from '@angular/common/http';
 
 
 @NgModule({
@@ -22,9 +25,10 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ConexionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
