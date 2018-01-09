@@ -1,0 +1,142 @@
+<div class="container app">
+  <div class="text-left">
+      <h1>
+          FARMACIA AMIGA
+      </h1>
+  </div>
+    <div class="menu text-right">
+        <button class="btn btn-secondary custom-button-width" type="submit">principal</button>
+        <button class="btn btn-secondary custom-button-width" type="submit">nosotros</button>
+        <button class="btn btn-secondary custom-button-width" type="submit">mision/vision</button>
+        <button class="btn btn-secondary custom-button-width" type="submit">productos</button>
+    </div>   
+      <div class="row">
+        <div class="col-sm-4">
+            <img width=100% height="450" src="../assets/ubicacion.jpg">
+        </div>
+        <div class="col-sm-8">
+            <img width=100% height="450" src="../assets/portada.jpg">
+        </div>
+      </div>
+</div>
+
+<div class="container app">
+
+  <div class="row">
+        <div class="col-sm-2">
+          <div class="btn-group-vertical">
+              <div class="grupo-boton">
+              <button class="btn btn-md btn-default" type="submit">DATOS PERSONALES</button>
+              <button class="btn btn-md btn-default" type="submit">DATOS LABORALES</button>
+              <button class="btn btn-md btn-default" type="submit">HISTORIAL DE CONSUMO</button>
+              <button class="btn btn-md btn-default" type="submit">SALIR</button>
+              </div>
+          </div>
+        </div>
+        <div class="formulario col-lg-9">
+          <div >
+            <div class="form-horizontal">
+              <div class="form-group">
+                <label for="codigo" class="control-label col-sm-3">
+                Codigo de Usuario 
+                </label>
+                <div class="col-sm-3">
+                  <input type="text"
+                  class="form-control" id="codigo" name="codigo"[(ngModel)]="model.name"
+                  placeholder="Ingresar un Codigo">
+                </div>
+              </div> 
+
+              <div class="form-group">
+                <label for="nombre" class="control-label col-sm-3">
+                Nombre de Usuario 
+                </label>
+                <div class="col-sm-6">
+                  <input type="text"
+                  class="form-control" id="nombre" name="name"[(ngModel)]="model.name"
+                  placeholder="Ingrese su Nombre">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="domicilio" class="control-label col-sm-3">
+                domicilio
+                </label>
+                <div class="col-sm-8">
+                  <input type="data"
+                  class="form-control" id="domicilio" name="domicilio" [(ngModel)]="model.domicilio"
+                  placeholder="Ingrese su domicilio">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="codigo" class="control-label col-sm-3">
+                Fecha de Nacimiento 
+                </label>
+                <div class="col-lg-4">
+                  <input type="text"
+                  class="form-control" id="fecha_nacimiento" name="fecha_nac"[(ngModel)]="model.name"
+                  placeholder="Ingresar Fecha de Nacimiento">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="lugar" class="control-label col-sm-3">
+                  Lugar de Nacimiento 
+                </label>
+                <div class="col-sm-5">
+                    <input type="text"
+                    class="form-control" id="lugar_nac" name="lugar_nac"[(ngModel)]="model.lugar"
+                    placeholder="lugar de nacimiento">
+                </div>
+              </div>  
+
+            </div> 
+        <div class="menu text-right">
+        <button type="submit" class="btn btn-default" (click)="registro()">
+          GUARDAR Y CONTINUAR
+        </button>
+      </div> 			  
+
+          </div> 
+    
+        </div>
+      <div class="nav-right">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="link"><a href="#">PRINCIPAL</a></li>
+          <li role="presentation" class="link"><a href="#">NOSOTROS</a></li>
+          <li role="presentation" class="link"><a href="#">VISION</a></li>
+          <li role="presentation" class="link"><a href="#">MISION</a></li>
+        </ul>
+      </div>    
+  </div>
+</div>
+
+
+<div class="container app">
+
+<div class="formulario col-lg-11.5">
+  <h1>PRODUCTOS</h1>
+</div>
+<div class="container">
+  <table class="table table-bordered table-hover">
+    <tr>
+      <th>imagen de producto 1</th>
+      <th>imagen de producto 2</th>
+      <th>imagen de producto 3</th>
+    </tr>
+    <tr>
+      <td img src="../assets/carrito.jpg" alt="Mountain View">producto 1</td>
+      <td>producto 2</td>
+      <td>producto 3</td>
+    </tr>
+    <tr>
+      <td>icono carrito 1</td>
+      <td>icono carrito 2</td>
+      <td>icono carrito 3</td>
+    </tr>  
+  </table>  
+</div>
+<div>
+
+ </div>

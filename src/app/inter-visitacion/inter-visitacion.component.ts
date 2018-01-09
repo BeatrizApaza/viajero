@@ -1,4 +1,6 @@
+import { InterVisitacionService } from '../inter-visitacion.service';
 import { Component, OnInit } from '@angular/core';
+import { InterVisitacion } from '../inter-visitacion';
 
 @Component({
   selector: 'app-inter-visitacion',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterVisitacionComponent implements OnInit {
 
-  constructor() { }
+  interVisitaciones: InterVisitacion[];
 
-  ngOnInit() {
+  constructor(private interVisitacionService:InterVisitacionService) { }
+  getInterVisitacion(): void {
+    this.interVisitacionService.getInterVisitacion()
+      .subscribe(interVisitaciones => this.interVisitaciones = interVisitaciones);
   }
 
+  ngOnInit() {
+    this.getInterVisitacion(); 
+  }
 }
+
+

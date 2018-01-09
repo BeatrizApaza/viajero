@@ -1,0 +1,58 @@
+.app{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    background: rgb(247, 220, 139)
+
+
+}
+
+.menu{
+       margin-bottom: 10px;
+ 
+}
+
+.custom-button-width {
+	width:130px;
+}
+
+.control-label{
+    border-radius: 0px;
+    margin: 5px;
+    background: #fff
+
+}
+.grupo-boton{
+    border-radius: 0px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(247, 220, 139)
+  
+}
+.formulario{
+    border-radius: 0px;
+    margin: 20px;
+    padding: 30px;
+    background: #fff
+}
+
+.nav-right{
+    text-align: right;
+}
+
+ul.nav{
+    display: inline-block;
+}
+.table{
+    width: 94%;    
+    text-align:  center;
+
+
+}
+
+.img-responsive{
+    width: 94%;    
+    text-align:  center;
+
+
+}

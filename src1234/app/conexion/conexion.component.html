@@ -4,7 +4,12 @@
       
         <div class="container col-md-9">
           
-          <app-buscar></app-buscar>
+          <div class="form-group">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="ciudad" placeholder="Ciudad">
+            <input type="text" name="idioma" placeholder="Idioma">
+            <button class="btn btn-lg btn-primary btn-success" id="IngresoLog" type="submit">BUSCAR</button>
+          </div>
           
           <h3 align="center">JUNTAS ANUALES</h3>
 
@@ -15,8 +20,9 @@
               <th>Idioma</th>
             </tr>
             <tr *ngFor="let conexion of conexiones">
-              <td>{{conexion.name}}</td>
-              <td>{{conexion.email}}</td>
+
+              <td>{{conexion.id}}</td>
+              <td>{{conexion.title}}</td>
               <td>{{conexion.body}}</td>
             </tr>
           </table>  

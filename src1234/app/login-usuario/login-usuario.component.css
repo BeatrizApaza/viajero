@@ -1,0 +1,28 @@
+
+.cabecera{
+    margin: 6px auto;
+	text-align: center;
+}
+
+.contenido{
+	width: 400px;
+	margin: 20px auto;
+	background-color: #F3EDED;
+        border: 1px solid #ECE8E8;
+	height: 350px;
+	border-radius: 50px;
+	padding: 60px 50px 60px 50px;
+}
+input{
+	width: 8px;
+}
+
+.form-group{
+	text-align: center;
+
+}
+.form-control{
+	width: 100%;
+}
+
+

@@ -1,0 +1,17 @@
+.app{
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    background: rgb(255, 207, 49)
+
+
+}
+
+.menu{
+       margin-bottom: 10px;
+ 
+}
+
+.custom-button-width {
+	width:130px;
+}

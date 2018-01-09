@@ -1,0 +1,24 @@
+header{
+    background: #fff;
+    color: #fff;
+    font-family: 'Brush Script MT';
+}
+.container{
+    background: #fff;
+    color: #290519;   
+}
+.main{
+    background: #330f0f;
+}
+.color1{
+    background: #4195e9;
+    color:#fff;
+}
+#menu button {
+    background-color: #7a4848;
+}
+
+#menu{
+    padding: 10px;
+    margin: 10px;
+}

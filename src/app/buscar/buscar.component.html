@@ -1,0 +1,13 @@
+<div id="search-component">
+  <h4>Buscar</h4>
+
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+
+  <ul class="search-result">
+    <li *ngFor="let conexion of conexiones$ | async" >
+      <a routerLink="">
+        {{ conexion.name }} | {{ conexion.id }} | {{ conexion.email }}
+      </a>
+    </li>
+  </ul>
+</div>
